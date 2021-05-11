@@ -1,7 +1,14 @@
+// L1 Update Existing Page Content
+/********************************************************************/
+// Update Page Content
+//--------------------------------------------------------------------
+
  // store the first .card element in a variable for easy access:
  const nanodegreeCard = document.querySelector('.card');
 
+/********************************************************************/
 // An Element's Inner HTML
+//--------------------------------------------------------------------
 // every element has an .innerHTML property. This property, as it's
 // 	rightly named, represents the markup of the element's content.
 // 	Use this property to:
@@ -11,7 +18,9 @@
 myElement.innerHTML = 'The <strong>Greatest</strong> Ice Cream Flavors';
 
 
+/********************************************************************/
 //Outer HTML
+//--------------------------------------------------------------------
 // .outerHTML represents the HTML element itself, as well as its
 // 	children.
 
@@ -28,7 +37,9 @@ console.log(outerResults);
 // logs the string: "<h1 id="pick-me">Greetings To <span>All</span>!</h1>"
 
 
+/********************************************************************/
 //An Element's Text Content
+//--------------------------------------------------------------------
 // .textContent returns justthe text content of the element.
 // 	The .textContent property will:
 // 		set the text content of an element and all its descendants
@@ -41,7 +52,10 @@ nanodegreeCard.textContent = "I will be the updated text for the nanodegreeCard 
 // 	display the content as HTML. Instead, it will still display
 // 	everything as text - even the HTML characters!
 
+
+/********************************************************************/
 // .innerText property!
+//--------------------------------------------------------------------
 // .innerText will get the visible text of the element. This is an
 // 	important distinction! If CSS is used to hide any text inside
 // 	that element, .innerText will not return that text, while

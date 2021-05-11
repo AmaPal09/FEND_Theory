@@ -1,7 +1,7 @@
 // L1_Spread_Operator
 /********************************************************************/
 // Spread operator
-//--------------------------------------------------------------------
+ //--------------------------------------------------------------------
 
 // The spread operator, written with three consecutive dots ( ... ),
 // is new in ES6 and gives you the ability to expand, or spread,
