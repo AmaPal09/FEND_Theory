@@ -28,7 +28,6 @@ app.post('/api/courses', (req, res) => {
 	// Assumption that Req body contains param name. For getting the name from the body, middleware would be needed to parse the JSON req from the client
 		name: req.body.name
 	};
-
 	courses.push(course);
 	// return the new course to client
 	res.send(course);
