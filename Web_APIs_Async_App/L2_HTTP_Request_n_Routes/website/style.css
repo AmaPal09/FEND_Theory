@@ -1,0 +1,8 @@
+*{
+	font-size: 16px;
+}
+
+.formInput {
+	color: blue;
+	border-color: red;
+}
