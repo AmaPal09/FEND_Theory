@@ -1,7 +1,19 @@
 // serverEx1.js
 const express = require('express');
-const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
+//const { response } = require('express');
 
+// Start up an instance of app
+const app = express();
+/* Middleware*/
+//Here we are configuring express to use body-parser as middle-ware.
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+
+// Cors for cross origin allowance
+app.use(cors());
 //Port for the app to run on
 const port = process.env.PORT || 3000;
 
@@ -29,7 +41,7 @@ app.post('/', (req, res) => {
 	res.send("POST received");
 });
 
-const data = [];
+let data = [];
 app.post('/addMovie', addMovie );
 
 function addMovie(req, res) {
