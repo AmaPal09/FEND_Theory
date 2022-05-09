@@ -48,6 +48,7 @@ function addMovie(req, res) {
 	console.log("/addMovie post request");
 	console.log(data);
 	data.push(req.body);
+	res.send(data);
 }
 
 //Keep the server running and listen for any activity.
